@@ -691,7 +691,7 @@ class TestRandomDist(object):
         assert_raises(IndexError, random.permutation, bad_x_str)
 
         random.seed(self.seed)
-        bad_x_float = 1.5
+        bad_x_float = 1.2
         assert_raises(IndexError, random.permutation, bad_x_float)
 
         integer_val = 10

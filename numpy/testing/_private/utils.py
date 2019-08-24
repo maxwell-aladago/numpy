@@ -687,7 +687,6 @@ def assert_array_compare(comparison, x, y, err_msg='', verbose=True,
                          equal_inf=True):
     __tracebackhide__ = True  # Hide traceback for py.test
     from numpy.core import array, array2string, isnan, inf, bool_, errstate, all
-
     x = array(x, copy=False, subok=True)
     y = array(y, copy=False, subok=True)
 

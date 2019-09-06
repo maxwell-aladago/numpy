@@ -793,7 +793,7 @@ def assert_array_compare(comparison, x, y, err_msg='', verbose=True,
             percent_mismatch = 100 * n_mismatch / n_elements
             remarks = [
                 'Mismatched elements: {} / {} ({:.3g}%)'.format(
-                    n_mismatch, ox.size, percent_mismatch)]
+                    n_mismatch, n_elements, percent_mismatch)]
 
             with errstate(invalid='ignore', divide='ignore'):
                 # ignore errors for non-numeric types
